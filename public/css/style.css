@@ -1,0 +1,200 @@
+/* reset */
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* general */
+
+:root {
+    --light-grey:#EDF1F5;
+    --blue:#007BFF;
+    --grey:#A8AFBF;
+    --red:#FF5050;
+    --green:#2CD07E;
+    --light-red:#FFA7A7;
+    --light-blue:#95D5F1;
+    --light-green:#95E7BE;
+    font-size:62.5%;
+    background-color: var(--light-grey);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width:1000px;
+    margin:auto; 
+}
+
+.note-title {
+    font-weight:400;
+    max-width:220px;
+}
+
+.note-subtitle {
+    font-weight: 300;
+}
+
+a {
+    color:#000;
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.my-10 {
+    margin-bottom: 1rem;
+}
+
+/* colors */
+
+.white {
+    color:#fff;
+}
+
+.bg-red {
+    background-color: var(--light-red);
+}
+
+.bg-blue {
+    background-color: var(--light-blue);
+}
+
+.bg-green {
+    background-color: var(--light-green);
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+
+.red {
+    color: var(--light-red);
+}
+
+.blue {
+    color:var(--light-blue);
+}
+
+.green {
+    color:var(--light-green);
+}
+
+.grey {
+    color:var(--grey);
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 4rem 0;
+    padding:1.6rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    font-size:1.3rem;
+}
+
+.nav ul {
+    display: flex;
+    gap:1rem;
+}
+
+.nav-element {
+    list-style-type: none;
+    padding:1.2rem;
+    border-radius: 30px;
+}
+
+.header .focus {
+    background-color: var(--blue);
+    padding:1.2rem;
+    border-radius: 30px;
+}
+
+.header .focus a {
+    color:#fff;
+}
+
+.nav-element a {
+    text-transform: uppercase;
+    color:var(--blue);
+}
+
+/* main */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content:flex-start;
+}
+
+.note {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding:2.5rem;
+    width:320px;
+    margin-bottom:0.1rem;
+    font-size:1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    position:relative;
+}
+
+.modify {
+    margin-right:0.8rem;
+}
+
+.main .note .side-line {
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    left: 0;
+}
+
+
+.circle {
+    margin-left:1rem;
+}
+
+/* Add note */
+
+.add-note-div {
+    display: block;
+    margin: auto;
+    width:800px;
+}
+
+.add-note-div form {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.add-note-div input {
+    border: 1px solid var(--grey);
+    border-radius:5px;
+    max-width:700px;
+    padding:0.5rem;
+}
+
+.btn {
+    background-color: var(--blue);
+    padding:1.2rem;
+    border-radius: 30px;
+    color:#fff;
+    text-transform: uppercase;
+    max-width:100px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
